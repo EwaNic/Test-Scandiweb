@@ -1,6 +1,6 @@
-create database id18951610_test;
+create database test;
 
-use id18951610_test;
+use test;
 
 CREATE TABLE `products` (
   `id` int(11) NOT NULL auto_increment,
