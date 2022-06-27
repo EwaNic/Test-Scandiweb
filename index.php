@@ -24,9 +24,7 @@
            
             <div  class="alignButtons"style="display:flex; justify-content:flex-end"> 
 
-                <!--Tried to pass #1 test, related to clickable element "ADD", I have changing name, id,label, value...no1 works. 
-                 On the following test where products are submited, Tester bot found "ADD" button with no problems at all.
-                Its Tester bot broken maybe?-->
+                <!--pridėjimo mygtukas, ištrynimo mygtukas-->
                 <button  style="margin-right:50px;" type="button"  class="btn btn-primary" name="add-product"
                 id="add-product-btn" onclick="window.location.href='add-product.php'"><b>ADD</b></button>  
                
@@ -42,7 +40,7 @@
     <div  class="py-5">
         <div class="container">
             <div class="row hidden-md-up">
-             <!--Get all products from DB-->
+             <!--Paima visus produktus DB-->
             <?php
                 $query = "SELECT * FROM products";
                 $result_products = mysqli_query($conn, $query);
@@ -57,7 +55,7 @@
                         <label><?php echo $row['sku']; ?> : <?php echo $row['prod_type']; ?></label>
                         <h5><?php echo $row['name']; ?></h5>
                         <p>$<?php echo $row['price']; ?></p>
-                        <!--Conditional rendering depending on product type -->
+                        <!--atvaizduoju gaminio tipą -->
                         <?php if ($row['prod_type'] == 'DVD'): ?>
                         <p>Size: <?php echo $row['dvd']; ?>MB</p>
 

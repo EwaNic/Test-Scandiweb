@@ -1,5 +1,5 @@
 <?php
-//Removed Session due to mandatory instructions, denying alerts/messages to be displayed
+//pašalinama sesija
 //session_start();
 include("db.php");
 

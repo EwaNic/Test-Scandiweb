@@ -71,8 +71,8 @@
         <div class="col-md-3">
             <div class="card card-body">
                 <!--INPUT FORM
-                it will contains the form to add new product to the database:
-                Fields: SKU / NAME / PRICE / PROD_TYPE / DVD / BOOK / FUR_H / FUR_W / FUR_L -->
+               jame bus forma, skirta įtraukti naują produktą į duomenų bazę:
+                Laukai: SKU / NAME / PRICE / PROD_TYPE / DVD / BOOK / FUR_H / FUR_W / FUR_L -->
                 <form id="product_form" action="save_product.php" method="POST">
                     <div class="form-group">
                     <div class="col">
@@ -84,12 +84,12 @@
                     <div class="col">
                         <input style="margin:10px;" id="price" type="text" name="price" class="form-control" placeholder="Enter Price"required>
                                                
-                         <!--if the select(prod_type) option = DVD, then show the following fields:
-                        Fields: DVD_SIZE
-                        if the select(prod_type) option = BOOK, then show the following fields:
-                        Fields: BOOK_WEIGHT
-                        if the select(prod_type) option = FUR, then show the following fields:
-                        Fields: FUR_H / FUR_W / FUR_L -->
+                         <!--jei parinktis select(prod_type) = DVD, tada parodykite šiuos laukus:
+                        Laukai: DVD_SIZE
+                        jei parinktis select(prod_type) = UŽSAKYTI, tada parodykite šiuos laukus:
+                        Laukai: BOOK_WEIGHT
+                        jei parinktis select(prod_type) = FUR, tada parodykite šiuos laukus:
+                        Laukai: FUR_H / FUR_W / FUR_L -->
                         <select style="margin:10px;" id="productType" name="prod_type" class="form-control" >
                             <option value="">Select Product Type</option>
                             <option value="DVD">DVD</option>
